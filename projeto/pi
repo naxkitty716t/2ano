@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace paRTE2N
+{
+    internal class Program
+    {
+       
+public double pi = 3.14;
+          
+public double circunferencia(double r)
+            {
+                return 2.0 * pi * r;
+            }
+            static double volume(double r)
+            {
+                return 4.0 / 3.0 * pi * r * r * r;
+            }
+
+
+
+
+        }
+    }
