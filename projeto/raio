@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace nax2
+{
+    internal class Program
+    {
+
+            static double pi = 3.14;
+            static void Main(string[] args)
+            {
+
+                Console.Write("Entre com o valor do raio: ");
+
+                double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                double circ = circunferencia(raio);
+                double volume = volume(raio);
+
+                Console.WriteLine("circunferencia = " + circ.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine("volume = " + volume.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine("valor de pi = " + pi.ToString("F2", CultureInfo.InvariantCulture));
+
+            }
+            static double circunferencia(double r)
+            {
+                return 2.0 * pi * r;
+            }
+            static double volume(double r)
+            {
+                return 4.0 / 3.0 * pi * r * r * r;
+            }
+
+        }
+    }
+
+
+
+}
+    }
+}
